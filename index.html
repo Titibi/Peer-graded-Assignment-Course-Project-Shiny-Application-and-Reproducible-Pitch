@@ -41,7 +41,7 @@
     
 
     <!-- SLIDES -->
-    <slide class="class" id="slide-1" style="background:;">
+    <slide class="class" id="id" style="background:;">
   <hgroup>
     <h2>Slide 1</h2>
   </hgroup>
@@ -59,7 +59,12 @@
     <h2>Slide 2</h2>
   </hgroup>
   <article data-timings="">
-    <p>The application allows users to input three values and then generates an estimate of mileage using random forest and Linear regression.</p>
+    <p>The application allows users to input four values and then generates an estimate of mileage using Rpart and Linear Model.</p>
+
+<pre><code class="r">library(png)
+img &lt;- readPNG(&quot;D://R//Working_DIR//test//MyShinyApp//shiny2.PNG&quot;)
+grid::grid.raster(img)
+</code></pre>
 
 <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
 
@@ -75,6 +80,21 @@
     <p>Behind the scenes, the application uses &quot;mtcars&quot; data set to do the initial machine learning.</p>
 
 <p>The models then estimate Mileage based on the values of number of cylinder, displacement, Horsepower and Weight.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Slide 4</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The app is useful to get an estimate of mileage for various combinations of cylinder, displacement, horsepower and weight. There by helping the user in deciding for the right vehicle. </p>
+
+<p>Since output is generated using &quot;Random Forest&quot; and &quot;Linear Model&quot;, it also shows how much user can rely on estimated values.</p>
+
+<p>Similar estimates from both the models, increases user confidence in the estimated value.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -100,6 +120,12 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=3 title='Slide 3'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Slide 4'>
+         4
       </a>
     </li>
   </ul>
